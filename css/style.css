@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --bg : #181818;
+    --main-pink : #ee10b0;
+    --main-pink-hover : #ff30c4;
+    --white-pink: #fde7f7;
+    --white-pink-hover: #fcdbf3;
+    --main-blue : #0e9eef;
+    --main-blue-hover: #0d8ed7;
+}
+
+body{
+    --bs-body-font-family: 'Vazirmatn', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 16px !important; 
+}
+
+.container-fluid{
+    height: 200vh;
+    background-color: var(--bg);
+    z-index: 0;
+}
+
+#sidebar{
+    padding-left: 0px;
+}
+
+.sidebar-sticky{
+    user-select: none;
+    background-color: var(--bg);
+    padding-top: 48px;
+}
+
+.sidebar-sticky>li>svg{
+    height: 16px;
+    fill: var(--white-pink);
+}   
+.nav-title{
+    color: var(--main-pink);
+    font-size: 0.75rem;
+    padding-left: 75px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.nav-title:hover{
+    color: var(--main-pink-hover);
+    cursor: pointer;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+    padding: 12px;
+    color: var(--white-pink);
+}
+.nav-item>sgv{
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar-title{
+    font-size: 2rem; 
+    margin-left: 60px ;
+    color: var(--main-pink);
+    font-weight: 750;
+    text-decoration: none;
+}
+.sidebar-title:hover{
+    color: var(--main-pink-hover);
+    cursor: pointer;
+}
+
+.nav-link{
+    margin-left: 6px;
+}
+
+.nav-item:hover, .nav-item:active{
+    background-color: var(--main-pink);
+    color: var(--white-pink-hover);
+    padding-left: 14px;
+    margin-left: 64px;
+    border-radius: 10px;  
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+    
+
+.hero-section{
+    background-image:   radial-gradient(circle at bottom right, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+                        url('/assets/images/rockycde.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 48px 56px;
+    height: 595px;
+    border-radius: 25px;
+}
+
+.hero-section>header{
+    padding: 16px 25px;
+    text-wrap: nowrap;
+}
+
+.search-container{
+    height: 38px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-bar{
+    width: 312px;
+    background-color: #1f1f1f;
+    border-radius: 10px; 
+    border: none;
+    padding: 8px 10px;
+    color: var(--white-pink);
+    
+}
+
+.search-bar:focus{
+    background-color: #1f1f1f;
+    color: var(--white-pink);
+    border-color: none;
+    outline: none; 
+}
+
+.search-icon {
+    margin-left: 18px;
+    margin-top: -3px;
+    fill: var(--white-pink);
+    width: 16px;
+    height: 16px; 
+}
+
+
+.other-links>a{
+    color: var(--white-pink);
+    text-decoration: none;
+    padding: 0px 8px;
+    padding-top: 6px;
+    user-select: none;
+}
+.other-links>a:hover{
+    color: var(--main-blue-hover);
+}
+
+.header-btn > .btn {
+    height: 36px;
+    padding: 0 53px;
+    border-radius: 4px;
+    padding-top: 6px;
+}
+
+.header-btn > .login-btn {
+    color: var(--main-pink);
+    border-color: var(--main-pink);
+}
+
+.header-btn > .login-btn:hover {
+    color: var(--white-pink);
+    background-color: var(--main-pink-hover);
+    border-color: var(--main-pink-hover);
+}
+
+.header-btn > .signup-btn {
+    color: var(--white-pink);
+    background-color: var(--main-pink);
+    border-color: var(--main-pink);
+    padding-top: 6px;
+    margin-left: 12px;
+}
+
+.header-btn > .signup-btn:hover {
+    color: var(--white-pink);
+    background-color: var(--main-pink-hover);
+}
