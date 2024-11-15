@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
     --bg : #181818;
     --main-pink : #ee10b0;
     --main-pink-hover : #ff30c4;
@@ -9,6 +6,11 @@
     --white-pink-hover: #fcdbf3;
     --main-blue : #0e9eef;
     --main-blue-hover: #0d8ed7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -80,7 +82,7 @@ body{
     margin-left: 6px;
 }
 
-.nav-item:hover, .nav-item:active{
+.nav-item:hover:not(.active), .nav-item:active{
     background-color: var(--main-pink);
     color: var(--white-pink-hover);
     padding-left: 14px;
@@ -89,9 +91,28 @@ body{
     cursor: pointer;
     transform: scale(1.1);
 }
+.nav-item.active {
+    color: var(--white-pink-hover);
+    border-radius: 10px;
+    transform: scale(1.1);
+    font-weight: 700;
+}
 
-
+.nav-item.active:hover {
+    background-color: var(--white-pink);
+    color: var(--main-pink);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.nav-item.active svg path{
+    fill: var(--white-pink);
+}
+.nav-item.active:hover svg path{
+    fill: var(--main-pink);
+}
     
+
+
 
 .hero-section{
     background-image:   radial-gradient(circle at bottom right, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
