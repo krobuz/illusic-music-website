@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    color: magenta;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul,
+.library ul,
+.playlists ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sidebar ul li.active a {
+    color: magenta;
+}
+
+.library p,
+.playlists p {
+    margin-bottom: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.settings {
+    margin-top: auto;
+}
+
+.settings a {
+    text-decoration: none;
+    color: magenta;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.playlist-info {
+    display: flex;
+    gap: 20px;
+}
+
+.playlist-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.info-text h1 {
+    font-size: 24px;
+}
+
+.info-text span {
+    color: magenta;
+}
+
+.play-all {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: magenta;
+    color: #fff;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #2a2a2a;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+}
+
+tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+tbody td {
+    padding: 10px;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+    background-color: magenta;
+    color: #000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, magenta, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #fff;
+}
+
+.sidebar {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+th, td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.1); 
+    font-weight: bold;
+}
+
+.play-all {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.play-all:hover {
+    background: #9013fe;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.sidebar .active a {
+    color: #4a90e2;
+    font-weight: bold;
+}
