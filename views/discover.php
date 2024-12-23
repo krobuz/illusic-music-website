@@ -14,8 +14,8 @@
         <aside class="sidebar">
             <ul>
                 <h3>Explore</h3>
-                <li><a href="views/home.php"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="views/discover.php" class="active"><i class="fas fa-search"></i> Discover</a></li>
+                <li><a href="home.php"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="discover.php" class="active"><i class="fas fa-search"></i> Discover</a></li>
                 <li><a href="albums.php"><i class="fas fa-compact-disc"></i> Albums</a></li>
                 <li><a href="#"><i class="fas fa-plus-square"></i> Artists</a></li>
             </ul>

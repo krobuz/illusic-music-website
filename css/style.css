@@ -136,7 +136,7 @@ body{
 
 .hero-section{
     background-image:   radial-gradient(circle at bottom right, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
-                        url('/music_website/assets/images/rockycde.jpg') ;
+                        url('/music_website/uploads/covers/rockycde.jpg') ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,4 +391,34 @@ footer {
 .player-song-info > i{
     color: var(--white);
     font-size: 20px;
+}
+
+
+
+.account-btn > .btn {
+    margin-left: 16px;
+    height: 36px;
+    padding: 0 28px;
+    border-radius: 10px;
+    padding-top: 6px;
+    color: var(--white);
+    background-color: var(--main-pink-hover);
+    border: none;
+
+}
+
+.account-btn > .btn:hover {
+    font-weight: 900;
+    color: var(--main-pink);
+    background-color: var(--white);
+    border: none;
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+    transition: background-color 0.2s ease;
+}
+
+.account-btn > .btn:first-child:active, .account-btn > .btn:not(.btn-check)+.btn:active {
+    color: rgba(255,255,255,0.8);
+    border: none;
+    background-color: transparent;
 }

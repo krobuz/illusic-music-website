@@ -24,19 +24,19 @@
                 <p class="nav-title">Menu</p>
                 <li class="nav-item active">
                     <i class="fa-solid fa-house"></i>
-                    <a href="home.php" class="nav-link">Home</a>
+                    <a href="views/home.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-compass"></i>
-                    <a href="discover.php" class="nav-link">Discover</a>
+                    <a href="views/discover.php" class="nav-link">Discover</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-record-vinyl"></i>
-                    <a href="albums.php" class="nav-link">Albums</a>
+                    <a href="views/albums.php" class="nav-link">Albums</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-circle-user"></i>
-                    <a href="artists.php" class="nav-link">Artists</a>
+                    <a href="views/artists.php" class="nav-link">Artists</a>
                 </li>
                 <p class="nav-title">Library</p>
                 <li class="nav-item">
@@ -56,15 +56,6 @@
                     <i class="fa-solid fa-list"></i>
                     <a href="#" class="nav-link">Yours playists</a>
                 </li>
-                <p class="nav-title">General</p>
-                <li class="nav-item">
-                    <i class="fa-solid fa-gear"></i>
-                    <a href="#" class="nav-link">Setting</a>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <a href="../login" class="nav-link">Logout</a>
-                </li>
             </div>
 
             <!-- Main Content -->
@@ -80,13 +71,9 @@
                             <a href="#" class="tran-ha-link ">Contact</a>
                             <a href="#" class="tran-ha-link ">Premium</a>
                         </div>
-                        <!-- <div class="header-btn d-flex w-md-auto d-none d-md-flex">
-                            <a href="#" class="btn btn-outline-light login-btn">Login</a>
-                            <a href="#" class="signup-btn btn ">Sign Up</a>
-                        </div> -->
-                        <div class="account-btn d-flex align-items-center">
-                            <a href="/music_website/upload_song" class="btn">Upload <i class="fa-regular fa-circle-up"></i></a>
-                            <a href="#" class="btn ">Account <i class="fa-regular fa-circle-user"></i></a>
+                        <div class="header-btn d-flex w-md-auto d-none d-md-flex">
+                            <a href="login" class="btn btn-outline-light login-btn">Login</a>
+                            <a href="register" class="signup-btn btn ">Sign Up</a>
                         </div>
                     </header>
                 </div>
@@ -276,33 +263,6 @@
                     </table>
                 </div>
 
-                <footer class="position-fixed bottom-0 music-player d-flex justify-content-between align-items-center">
-                    <div class="player-song-info d-flex align-items-center">
-                        <img class="player-song-img" src="/music_website/uploads/covers/ccmk.png" alt="">
-                        <div class="song-info">
-                            <span class="song-name">Tuong tu nang nhan vien</span>
-                            <span class="artist">CCMK</span>
-                        </div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="player-controls">
-                        <div class="player-control-btn">
-                            <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
-                            <button class="prev"><i class="fa-solid fa-backward"></i></button>
-                            <button class="play-pause"><i class="fa-solid fa-play"></i></button>
-                            <button class="next"><i class="fa-solid fa-forward"></i></button>
-                            <button class="repeat"><i class="fa-solid fa-repeat"></i></i></button>
-                        </div>
-                        <div class="progress-bar">
-                            <input type="range" class="seek-slider">
-                        </div>
-                    </div>
-                    <div class="volume-control">
-                        <input type="range" class="volume-slider">
-                    </div>
-
-                    <!-- <i class="fa-solid fa-pause"></i> -->
-                </footer>
             </div>
         </div>
     </div>
