@@ -29,7 +29,7 @@
 
         <label>Album:</label><br>
         <select name="album_id">
-            <option value="" disabled selected>No album</option>
+            <option value="" selected>No album</option>
             <?php
             // Assuming $albums contains all available albums in the database
             foreach ($albums as $album) {
@@ -39,7 +39,7 @@
         </select><br>
 
         <label>Genre:</label><br>
-        <select name="genre" required>
+        <select name="genre_id" required>
             <option value="" disabled selected>Select a Genre</option>
             <?php
             if (!empty($genres)) {
@@ -63,6 +63,7 @@
 
         <button type="submit" name="upload_song">Upload Song</button>
     </form>
+    
 </body>
 
 </html>

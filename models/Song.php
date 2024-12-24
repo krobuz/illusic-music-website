@@ -11,16 +11,16 @@ class Song
 
     public function uploadSong(string $title, int $artist_id, ?int $album_id, int $genre_id, string $file_path, string $cover_image, string $release_date)
     {
-        $album_id = !empty($album_id) ? $album_id : null;
+        $album_id = !empty($album_id) ? $album_id : NULL;
         $query = "INSERT INTO " . $this->table . " 
-                  (title, artist_id, album_id, genre, file_path, cover_image, release_date)
-                  VALUES (:title, :artist_id, :album_id, :genre, :file_path, :cover_image, :release_date)";
+                  (title, artist_id, album_id, genre_id, file_path, cover_image, release_date)
+                  VALUES (:title, :artist_id, :album_id, :genre_id, :file_path, :cover_image, :release_date)";
         $stmt = $this->conn->prepare($query);
 
         $stmt->bindParam(":title", $title);
         $stmt->bindParam(":artist_id", $artist_id, PDO::PARAM_INT);
         $stmt->bindParam(":album_id", $album_id, PDO::PARAM_INT);
-        $stmt->bindParam(":genre", $genre_id, PDO::PARAM_INT);
+        $stmt->bindParam(":genre_id", $genre_id, PDO::PARAM_INT);
         $stmt->bindParam(":file_path", $file_path);
         $stmt->bindParam(":cover_image", $cover_image);
         $stmt->bindParam(":release_date", $release_date);
