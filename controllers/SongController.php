@@ -31,7 +31,7 @@ class SongController
         return $this->songModel->getSongById($id);
     }
 
-    public function home()
+    public function index()
     {
         $songs = $this->songModel->getSongs(10, 0);
         // error_log('Songs: ' . print_r($songs, true));

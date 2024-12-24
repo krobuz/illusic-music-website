@@ -229,7 +229,33 @@ body{
     background-color: white;
 }
 
+.account-btn > .btn {
+    margin-left: 16px;
+    height: 36px;
+    padding: 0 28px;
+    border-radius: 10px;
+    padding-top: 6px;
+    color: var(--white);
+    background-color: var(--main-pink-hover);
+    border: none;
 
+}
+
+.account-btn > .btn:hover {
+    font-weight: 900;
+    color: var(--main-pink);
+    background-color: var(--white);
+    border: none;
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+    transition: background-color 0.2s ease;
+}
+
+.account-btn > .btn:first-child:active, .account-btn > .btn:not(.btn-check)+.btn:active {
+    color: rgba(255,255,255,0.8);
+    border: none;
+    background-color: transparent;
+}
 
 .song-section{
     height: 288px;
@@ -389,42 +415,14 @@ footer {
     width: calc(83.333333% - 0px);
     
 }
-.player-song-img{
+.footer-song-img{
     width: 60px;
     border-radius: 5px;
 }
 
-.player-song-info > i{
+.footer-song-info > i{
     color: var(--white);
     font-size: 20px;
 }
 
 
-
-.account-btn > .btn {
-    margin-left: 16px;
-    height: 36px;
-    padding: 0 28px;
-    border-radius: 10px;
-    padding-top: 6px;
-    color: var(--white);
-    background-color: var(--main-pink-hover);
-    border: none;
-
-}
-
-.account-btn > .btn:hover {
-    font-weight: 900;
-    color: var(--main-pink);
-    background-color: var(--white);
-    border: none;
-    transform: scale(1.04);
-    transition: transform 0.3s ease;
-    transition: background-color 0.2s ease;
-}
-
-.account-btn > .btn:first-child:active, .account-btn > .btn:not(.btn-check)+.btn:active {
-    color: rgba(255,255,255,0.8);
-    border: none;
-    background-color: transparent;
-}

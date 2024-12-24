@@ -95,7 +95,12 @@
                     <div class="cards-box d-flex align-items-center">
                         <?php if (!empty($songs)): ?>
                             <?php foreach ($songs as $song): ?>
-                                <div class="song-cards">
+                                <div class="song-cards"
+                                    data-song-file="/music_website/<?php echo htmlspecialchars($song['file_path']); ?>"
+                                    data-song-title="<?php echo htmlspecialchars($song['title']); ?>"
+                                    data-artist-name="<?php echo htmlspecialchars($song['artist_name']); ?>"
+                                    data-cover-image="/music_website/<?php echo htmlspecialchars($song['cover_image']); ?>">
+
                                     <div class="image-container">
                                         <img class="cards-image" src="/music_website/<?php echo htmlspecialchars($song['cover_image']); ?>" alt="">
                                     </div>
@@ -108,63 +113,7 @@
                         <?php else: ?>
                             <p>No songs available.</p>
                         <?php endif; ?>
-                        <!-- <li class="card-1">
-                            <div class="song-cards d-flex">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/2pac.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Hit em up</span>
-                                    <span class="artist">2 Pac</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-2">
-                            <div class="song-cards">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/eminem.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Godzilla</span>
-                                    <span class="artist">Eminem</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-3">
-                            <div class="song-cards">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/travisscott.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Fein</span>
-                                    <span class="artist">Travis Scott</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-4">
-                            <div class="song-cards">
-                                <div class="image-container">
 
-                                    <img class="cards-image" src="/music_website/uploads/covers/centralcee.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Doja</span>
-                                    <span class="artist">Central Cee</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-5">
-                            <div class="song-cards">
-                                <div class="image-container">
-
-                                    <img class="cards-image" src="/music_website/uploads/covers/wxrdie.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Bang qua Cau Giay</span>
-                                    <span class="artist">Wxrdie</span>
-                                </div>
-                            </div>
-                        </li> -->
                         <div class="expand-btn d-flex align-items-center">
                             <div class="plus-i">
                                 <i class="fa-solid fa-plus"></i>
@@ -176,63 +125,27 @@
                 <div class="song-section new-release-songs">
                     <p class="section-name">New release <span>Songs</span></p>
                     <div class="cards-box d-flex align-items-center">
-                        <li class="card-1">
-                            <div class="song-cards">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/2pac.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Hit em up</span>
-                                    <span class="artist">2 Pac</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-2">
-                            <div class="song-cards">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/eminem.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Godzilla</span>
-                                    <span class="artist">Eminem</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-3">
-                            <div class="song-cards">
-                                <div class="image-container">
-                                    <img class="cards-image" src="/music_website/uploads/covers/travisscott.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Fein</span>
-                                    <span class="artist">Travis Scott</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-4">
-                            <div class="song-cards">
-                                <div class="image-container">
+                    <?php if (!empty($songs)): ?>
+                            <?php foreach ($songs as $song): ?>
+                                <div class="song-cards"
+                                    data-song-file="/music_website/<?php echo htmlspecialchars($song['file_path']); ?>"
+                                    data-song-title="<?php echo htmlspecialchars($song['title']); ?>"
+                                    data-artist-name="<?php echo htmlspecialchars($song['artist_name']); ?>"
+                                    data-cover-image="/music_website/<?php echo htmlspecialchars($song['cover_image']); ?>">
 
-                                    <img class="cards-image" src="/music_website/uploads/covers/centralcee.png" alt="">
+                                    <div class="image-container">
+                                        <img class="cards-image" src="/music_website/<?php echo htmlspecialchars($song['cover_image']); ?>" alt="">
+                                    </div>
+                                    <div class="song-info">
+                                        <span class="song-name"><?php echo htmlspecialchars($song['title']); ?></span>
+                                        <span class="artist"><?php echo htmlspecialchars($song['artist_name']); ?></span>
+                                    </div>
                                 </div>
-                                <div class="song-info">
-                                    <span class="song-name">Doja</span>
-                                    <span class="artist">Central Cee</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card-5">
-                            <div class="song-cards">
-                                <div class="image-container">
-
-                                    <img class="cards-image" src="/music_website/uploads/covers/wxrdie.png" alt="">
-                                </div>
-                                <div class="song-info">
-                                    <span class="song-name">Bang qua Cau Giay</span>
-                                    <span class="artist">Wxrdie</span>
-                                </div>
-                            </div>
-                        </li>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <p>No songs available.</p>
+                        <?php endif; ?>
+                        
                         <div class="expand-btn d-flex align-items-center">
                             <div class="plus-i">
                                 <i class="fa-solid fa-plus"></i>
@@ -292,16 +205,16 @@
                 </div>
 
                 <footer class="position-fixed bottom-0 music-player d-flex justify-content-between align-items-center">
-                    <div class="player-song-info d-flex align-items-center">
-                        <img class="player-song-img" src="/music_website/uploads/covers/ccmk.png" alt="">
+                    <div class="footer-song-info d-flex align-items-center">
+                        <img class="footer-song-img" src="" alt="">
                         <div class="song-info">
-                            <span class="song-name">Tuong tu nang nhan vien</span>
-                            <span class="artist">CCMK</span>
+                            <span class="footer-song-name"></span>
+                            <span class="footer-artist"></span>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-regular fa-heart"></i> -->
                     </div>
-                    <div class="player-controls">
-                        <div class="player-control-btn">
+                    <div class="footer-controls">
+                        <div class="footer-control-btn">
                             <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
                             <button class="prev"><i class="fa-solid fa-backward"></i></button>
                             <button class="play-pause"><i class="fa-solid fa-play"></i></button>
@@ -315,8 +228,6 @@
                     <div class="volume-control">
                         <input type="range" class="volume-slider">
                     </div>
-
-                    <!-- <i class="fa-solid fa-pause"></i> -->
                 </footer>
             </div>
         </div>

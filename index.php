@@ -28,7 +28,8 @@ $router->addRoute('GET', '/music_website/logout', [$authController, 'logout']);
 
 $router->addRoute('GET', '/music_website/upload_song', [$songController, 'uploadSongForm']);
 $router->addRoute('POST', '/music_website/upload_song', [$songController, 'uploadSong']);
-$router->addRoute('GET', '/music_website/views/home', [$songController, 'home']);
+$router->addRoute('GET', '/music_website/views/home', [$songController, 'index']);
+$router->addRoute('GET', 'views/unlogin.php', [$songController, 'index']);
 
 // Handle the request
 $router->handleRequest();

@@ -70,6 +70,7 @@
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="/music_website/register">Register here</a></p>
+        <p>Discover more at: <a href="/music_website">Home Page</a></p>
     </div>
 </body>
 </html>

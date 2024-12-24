@@ -69,6 +69,7 @@
             <button type="submit">Register</button>
         </form>
         <p>Already have an account? <a href="/music_website/login">Login here</a></p>
+        <p>Discover more at: <a href="/music_website">Home Page</a></p>
     </div>
 </body>
 <script>
