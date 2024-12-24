@@ -24,19 +24,19 @@
                 <p class="nav-title">Menu</p>
                 <li class="nav-item active">
                     <i class="fa-solid fa-house"></i>
-                    <a href="views/home.php" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-compass"></i>
-                    <a href="views/discover.php" class="nav-link">Discover</a>
+                    <a href="#" class="nav-link">Discover</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-record-vinyl"></i>
-                    <a href="views/albums.php" class="nav-link">Albums</a>
+                    <a href="#" class="nav-link">Albums</a>
                 </li>
                 <li class="nav-item">
                     <i class="fa-solid fa-circle-user"></i>
-                    <a href="views/artists.php" class="nav-link">Artists</a>
+                    <a href="#" class="nav-link">Artists</a>
                 </li>
                 <p class="nav-title">Library</p>
                 <li class="nav-item">

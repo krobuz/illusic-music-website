@@ -61,19 +61,31 @@ class Song
 
     public function getSongs($limit = 10, $offset = 0)
     {
-        $query = "SELECT * FROM " . $this->table . " LIMIT :limit OFFSET :offset";
+        $query = "
+            SELECT 
+                s.*, 
+                a.name AS artist_name
+            FROM " . $this->table . " s
+            JOIN artist a ON s.artist_id = a.id
+            LIMIT :limit OFFSET :offset
+        ";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":limit", $limit, PDO::PARAM_INT);
         $stmt->bindParam(":offset", $offset, PDO::PARAM_INT);
         $stmt->execute();
-        return $stmt;
+        $songs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $songs ?: [];
     }
 
     public function getSongById($id)
     {
-        $query = "SELECT * FROM " . $this->table . " WHERE id = :id";
+        $query = "SELECT s.*, a.name AS artist_name, s.cover_image
+              FROM songs s
+              JOIN artist a ON s.artist_id = a.id
+              WHERE s.id = :songId";
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(":id", $id);
+        $stmt->bindParam(":songid", $id);
         $stmt->execute();
         return $stmt;
     }

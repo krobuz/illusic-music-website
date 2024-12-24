@@ -32,9 +32,9 @@
             <option value="" selected>No album</option>
             <?php
             // Assuming $albums contains all available albums in the database
-            foreach ($albums as $album) {
-                echo "<option value='{$album['id']}'>{$album['name']}</option>";
-            }
+            // foreach ($albums as $album) {
+            //     echo "<option value='{$album['id']}'>{$album['name']}</option>";
+            // }
             ?>
         </select><br>
 

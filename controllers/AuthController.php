@@ -48,7 +48,7 @@ class AuthController
             if ($loggedInUser) {
                 $_SESSION['user'] = $loggedInUser;
                 error_log("Login successful, redirecting to dashboard.");
-                header("Location: /music_website/views/home.php");
+                header("Location: /music_website/views/home");
                 exit();
             } else {
                 error_log("Invalid credentials.");

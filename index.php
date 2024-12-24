@@ -25,8 +25,10 @@ $songController = new SongController($db);
 $router->addRoute('POST', '/music_website/register', [$authController, 'register']);
 $router->addRoute('POST', '/music_website/login', [$authController, 'login']);
 $router->addRoute('GET', '/music_website/logout', [$authController, 'logout']);
+
 $router->addRoute('GET', '/music_website/upload_song', [$songController, 'uploadSongForm']);
 $router->addRoute('POST', '/music_website/upload_song', [$songController, 'uploadSong']);
+$router->addRoute('GET', '/music_website/views/home', [$songController, 'home']);
 
 // Handle the request
 $router->handleRequest();

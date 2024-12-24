@@ -93,7 +93,22 @@
                 <div class="song-section weekly-songs">
                     <p class="section-name">Weekly Top <span>Songs</span></p>
                     <div class="cards-box d-flex align-items-center">
-                        <li class="card-1">
+                        <?php if (!empty($songs)): ?>
+                            <?php foreach ($songs as $song): ?>
+                                <div class="song-cards">
+                                    <div class="image-container">
+                                        <img class="cards-image" src="/music_website/<?php echo htmlspecialchars($song['cover_image']); ?>" alt="">
+                                    </div>
+                                    <div class="song-info">
+                                        <span class="song-name"><?php echo htmlspecialchars($song['title']); ?></span>
+                                        <span class="artist"><?php echo htmlspecialchars($song['artist_name']); ?></span>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <p>No songs available.</p>
+                        <?php endif; ?>
+                        <!-- <li class="card-1">
                             <div class="song-cards d-flex">
                                 <div class="image-container">
                                     <img class="cards-image" src="/music_website/uploads/covers/2pac.png" alt="">
@@ -149,7 +164,7 @@
                                     <span class="artist">Wxrdie</span>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <div class="expand-btn d-flex align-items-center">
                             <div class="plus-i">
                                 <i class="fa-solid fa-plus"></i>

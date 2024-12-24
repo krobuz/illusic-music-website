@@ -298,6 +298,7 @@ body{
 .song-name{
     color: var(--white);
     font-weight: 500;
+
 }
 
 .artist{
@@ -310,6 +311,11 @@ body{
 .song-info .song-name,
 .song-info .artist {
     display: block;
+    white-space: nowrap;
+    overflow: hidden;     
+    text-overflow: ellipsis;    
+    max-width: 150px;          
+    display: block;   
 }
 
 .expand-btn{
